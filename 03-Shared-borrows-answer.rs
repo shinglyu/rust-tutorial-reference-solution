@@ -5,7 +5,7 @@ pub fn main() {
 }
 
 fn greet(name: &String) {
-    println!("Hello, {}!", name[3..]);
+    println!("Hello, {}!", &name[3..]);
 }
 
 // Goal #1: Convert `greet` to use borrowing, not ownership, so that
